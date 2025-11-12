@@ -1,0 +1,48 @@
+.guide-form {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Example image */
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+/* Optional: Make labels and select/input more visible */
+.guide-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+.guide-form select,
+.guide-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.guide-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.guide-form button:hover {
+  background-color: #e5673c;
+}
+
+

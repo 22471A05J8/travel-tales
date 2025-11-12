@@ -1,0 +1,297 @@
+/* Settings Component Styles */
+.settings-container {
+  padding: 2rem 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.settings-title {
+  text-align: center;
+  margin-bottom: 2rem !important;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.settings-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  min-width: 150px !important;
+  border-radius: 25px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  transition: all 0.3s ease !important;
+}
+
+.tab-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.section-title {
+  margin-bottom: 1.5rem !important;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.settings-card {
+  border-radius: 15px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.settings-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.trip-card {
+  border-radius: 15px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.trip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.trip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.trip-destination {
+  font-weight: 600 !important;
+  color: #2c3e50;
+}
+
+.trip-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: flex-end;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .settings-container {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.dark-mode .settings-title,
+.dark-mode .section-title {
+  color: #ffffff !important;
+}
+
+.dark-mode .settings-card,
+.dark-mode .trip-card {
+  background: #2c3e50 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .trip-destination {
+  color: #ffffff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settings-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .settings-actions {
+    flex-direction: column;
+  }
+  
+  .trip-actions {
+    justify-content: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Switch Styles */
+.MuiSwitch-root {
+  width: 42px;
+  height: 26px;
+  padding: 0;
+}
+
+.MuiSwitch-switchBase {
+  padding: 1px;
+  margin: 2px;
+  transition: all 0.3s ease;
+}
+
+.MuiSwitch-thumb {
+  width: 22px;
+  height: 22px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.MuiSwitch-track {
+  border-radius: 13px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+/* List Item Styles */
+.MuiListItem-root {
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.MuiListItem-root:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+/* Chip Styles */
+.MuiChip-root {
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+/* Dialog Styles */
+.MuiDialog-paper {
+  border-radius: 15px !important;
+}
+
+.MuiDialogTitle-root {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Form Control Styles */
+.MuiTextField-root,
+.MuiFormControl-root {
+  margin-bottom: 1rem;
+}
+
+.MuiInputLabel-root {
+  font-weight: 500;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+/* Button Styles */
+.MuiButton-root {
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.MuiButton-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Button Styles */
+.MuiIconButton-root {
+  transition: all 0.3s ease;
+}
+
+.MuiIconButton-root:hover {
+  transform: scale(1.1);
+  background: rgba(102, 126, 234, 0.1);
+}
+
+/* Loading States */
+.loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Accessibility Improvements */
+.MuiListItem-root:focus-within {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.MuiButton-root:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .settings-card,
+  .trip-card {
+    border: 2px solid #000;
+  }
+  
+  .MuiListItem-root {
+    border: 1px solid #000;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .settings-tabs,
+  .trip-actions,
+  .settings-actions {
+    display: none;
+  }
+  
+  .settings-card,
+  .trip-card {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+} 

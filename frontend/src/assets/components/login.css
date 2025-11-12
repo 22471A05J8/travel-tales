@@ -1,0 +1,136 @@
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* background: url('https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg')no-repeat;
+ background-size: cover; */
+ 
+  padding: 10px;
+}
+
+.login-card {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  flex-wrap: wrap;
+}
+
+/* Left side image */
+.login-image-side {
+  flex: 1;
+  background: url("https://img.freepik.com/premium-vector/vector-silhouette-person-hiking-with-backpack_1302083-189.jpg?w=360")
+    no-repeat center center ;
+  background-size: contain;
+  background-color: white;
+  min-height: 100%;
+margin-left: 10px;
+margin-bottom: 0px;
+}
+
+/* Right side form */
+.login-form-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Glassmorphism effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  color: #000;
+}
+
+.glass-card h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input groups */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.4);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.input-group .icon {
+  margin-right: 10px;
+  color: #000;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.icon-btn {
+  background: rgba(255,255,255,0.4);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.forgot-pass {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.register-link {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #0077b6;
+  text-decoration: none;
+}

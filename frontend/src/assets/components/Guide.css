@@ -1,0 +1,40 @@
+.app-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.guide-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.guide-form select,
+.guide-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.guide-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.guide-card {
+  width: 250px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.guide-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
